@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+
+body{
+    background-color: lightsteelblue;
+}
+
+
+.leftBracket{
+    position: fixed;
+    top: 330px;
+    left: 200px;
+    cursor: pointer;
+    padding: 5px 5px 5px 5px;
+    background-color: white;
+    box-shadow: 4px 6px 20px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.rightBracket{
+    position: fixed;
+    top: 330px;
+    right: 200px;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 4px 6px 20px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+}
+
+.heading{
+    background-color: black;
+    height: 80px;
+}
+
+.pagecontent{
+    display: flex;
+    height: 600px !important;
+
+}
+
+.leftcontent{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+img{
+    width: 150px;
+}
+
+.pagenumber{
+    border-top: 1px dotted black;
+}
+
+.coverpage{
+    left: 295px;
+    top: -25px;
+    border: none;
+    outline: none;
+    position: absolute;
+    height: 575px;
+    width: 800px;
+    box-shadow: 4px 6px 20px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 60px;
+    /* background: linear-gradient(to right, darkorange,white,green); */
+
+    z-index: 21;
+}
+
+.coverleft{
+    height: 575px;
+    background-color: orange;
+}
+.coverleft p{
+    font-size: 25px;
+    text-align: start;
+    font-weight: 800;
+    margin: 15px 5px 5px 5px;
+    
+}
+
+.coverleft img{
+
+    margin-top: 10px;
+    width: 70px;
+}
+
+.covermiddle{
+    background-color: #fff;
+}
+
+.coverright{
+    background-color: green;
+}
+
+.centerimage{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    top: 125px;
+    left: 250px;
+    border: 8px solid blue;
+    background-image: url(images/redfort.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* outline: 8px solid blue; */
+    border-radius: 50%;
+}
+
+
+.topleftimage{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 100px;
+    left: 200px;
+    border: 5px solid white;
+    /* outline: 3px solid black; */
+    background-image: url(images/hawamahal.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    border-radius: 50%;
+}
+
+.centerimage:hover,
+.topleftimage:hover, 
+.toprightimage:hover, 
+.bottomleftimage:hover, 
+.bottomrightimage:hover{
+    animation: example 5s infinite;
+    transform: rotate(360deg);
+    transition-duration: 10s;
+}
+
+@keyframes example{
+    0%{
+        border-color: green;
+    }
+    25%{
+        border-color: blueviolet;
+    }
+    50%{
+        border-color: red;
+    }
+    75%{
+        border-color: darkmagenta;
+    }
+    100%{
+        border-color: darkred;
+    }
+
+}
+
+.toprightimage{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 100px;
+    left: 550px;
+    border: 5px solid white;
+    /* outline: 3px solid black; */
+    background-image: url(images/Pansong-Lake-Leh-Ladakh.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.bottomrightimage{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 370px;
+    left: 550px;
+    border: 5px solid white;
+    /* outline: 3px solid black; */
+    background-image: url(images/dhanushkoti.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    border-radius: 50%;
+}
+
+.bottomleftimage{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 370px;
+    left: 200px;
+    border: 5px solid white;
+    /* outline: 3px solid black; */
+    background-image: url(images/KONARK.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    border-radius: 50%;
+}
+
+.firstpage{
+
+    left: 300px;
+    top: -25px;
+    border: none;
+    outline: none;
+    position: absolute;
+    height: 600px;
+    width: 800px;
+    box-shadow: 4px 6px 20px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 60px;
+    background-color: #fff;
+    z-index: 20;
+    display: none;
+}
+
+.secondpage{
+    position: absolute;
+    top: -25px;
+    left: 300px;
+    outline: none;
+    border: none;
+    height: 600px;
+    width: 800px;
+    box-shadow: 4px 6px 20px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 60px;
+    background-color: #fff;
+    z-index: 19;
+    display: none;
+}
+
+.thirdpage{
+    position: absolute;
+    left: 300px;
+    top: -25px;
+    outline: none;
+    border: none;
+    height: 600px;
+    width: 800px;
+    box-shadow: 4px 6px 20px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 60px;
+    background-color: #fff;
+    z-index: 18;
+    display: none;
+}
+
+.fourthpage{
+    position: absolute;
+    outline: none;
+    border: none;
+    left: 300px;
+    top: -25px;
+    height: 600px;
+    width: 800px;
+    box-shadow: 4px 6px 20px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 60px;
+    background-color: #fff;
+    display: none;
+    z-index: 17;
+}
+
+.fifthpage{
+    /* border: 1px solid black; */
+    left: 300px;
+    top: -25px;
+    border: none;
+    outline: none;
+    position: absolute;
+    height: 600px;
+    width: 800px;
+    box-shadow: 4px 6px 20px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 60px;
+    background-color: #fff;
+    z-index: 16;
+    display: none;
+}
+
+.sixthpage{
+    position: absolute;
+    top: -25px;
+    left: 300px;
+    outline: none;
+    border: none;
+    height: 600px;
+    width: 800px;
+    box-shadow: 4px 6px 20px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 60px;
+    background-color: #fff;
+    z-index: 15;
+    display: none;
+}
+
+.sevanthpage{
+    position: absolute;
+    left: 300px;
+    top: -25px;
+    outline: none;
+    border: none;
+    height: 600px;
+    width: 800px;
+    box-shadow: 4px 6px 20px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 60px;
+    background-color: #fff;
+    z-index: 14;
+    display: none;
+}
+
+.eighthpage{
+    position: absolute;
+    outline: none;
+    border: none;
+    left: 300px;
+    top: -25px;
+    height: 600px;
+    width: 800px;
+    box-shadow: 4px 6px 20px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 60px;
+    background-color: #fff;
+    display: none;
+    z-index: 13;
+}
+
+.ninthpage{
+    /* border: 1px solid black; */
+    left: 300px;
+    top: -25px;
+    border: none;
+    outline: none;
+    position: absolute;
+    height: 600px;
+    width: 800px;
+    box-shadow: 4px 6px 20px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 60px;
+    background-color: #fff;
+    z-index: 12;
+    display: none;
+}
+
+.tenthpage{
+    position: absolute;
+    top: -25px;
+    left: 300px;
+    outline: none;
+    border: none;
+    height: 600px;
+    width: 800px;
+    box-shadow: 4px 6px 20px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 60px;
+    background-color: #fff;
+    z-index: 11;
+    display: none;
+}
+
+.elevenpage{
+    position: absolute;
+    left: 300px;
+    top: -25px;
+    outline: none;
+    border: none;
+    height: 600px;
+    width: 800px;
+    box-shadow: 4px 6px 20px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 60px;
+    background-color: #fff;
+    z-index: 10;
+    display: none;
+}
+
+.twelvepage{
+    position: absolute;
+    outline: none;
+    border: none;
+    left: 300px;
+    top: -25px;
+    height: 600px;
+    width: 800px;
+    box-shadow: 4px 6px 20px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 60px;
+    background-color: #fff;
+    display: none;
+    z-index: 9;
+}
+
+.thirteenpage{
+    /* border: 1px solid black; */
+    left: 300px;
+    top: -25px;
+    border: none;
+    outline: none;
+    position: absolute;
+    height: 600px;
+    width: 800px;
+    box-shadow: 4px 6px 20px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 60px;
+    background-color: #fff;
+    z-index: 8;
+    display: none;
+}
+
+.fourteenpage{
+    position: absolute;
+    top: -25px;
+    left: 300px;
+    outline: none;
+    border: none;
+    height: 600px;
+    width: 800px;
+    box-shadow: 4px 6px 20px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 60px;
+    background-color: #fff;
+    z-index: 7;
+    display: none;
+}
+
+.fifthteenpage{
+    position: absolute;
+    left: 300px;
+    top: -25px;
+    outline: none;
+    border: none;
+    height: 600px;
+    width: 800px;
+    box-shadow: 4px 6px 20px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 60px;
+    background-color: #fff;
+    z-index: 6;
+    display: none;
+}
+
+.sixteenpage{
+    position: absolute;
+    outline: none;
+    border: none;
+    left: 300px;
+    top: -25px;
+    height: 600px;
+    width: 800px;
+    box-shadow: 4px 6px 20px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 60px;
+    background-color: #fff;
+    display: none;
+    z-index: 5;
+}
+
+.sevanteenpage{
+    left: 300px;
+    top: -25px;
+    border: none;
+    outline: none;
+    position: absolute;
+    height: 600px;
+    width: 800px;
+    box-shadow: 4px 6px 20px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 60px;
+    background-color: #fff;
+    z-index: 4;
+    display: none;
+}
+
+.eighteenpage{
+    position: absolute;
+    top: -25px;
+    left: 300px;
+    outline: none;
+    border: none;
+    height: 600px;
+    width: 800px;
+    box-shadow: 4px 6px 20px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 60px;
+    background-color: #fff;
+    z-index: 3;
+    display: none;
+}
+
+.ninteenpage{
+    position: absolute;
+    left: 300px;
+    top: -25px;
+    outline: none;
+    border: none;
+    height: 600px;
+    width: 800px;
+    box-shadow: 4px 6px 20px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 60px;
+    background-color: #fff;
+    z-index: 2;
+    display: none;
+}
+
+.twentypage{
+    position: relative;
+    outline: none;
+    border: none;
+
+    top: -25px;
+    height: 600px;
+    width: 800px;
+    box-shadow: 4px 6px 20px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 60px;
+    background-color: #fff;
+    display: none;
+    z-index: 1;
+}
+
+.leftBracket{
+    position: fixed;
+    top: 330px;
+    left: 200px;
+    cursor: pointer;
+    padding: 5px 5px 5px 5px;
+    background-color: white;
+    box-shadow: 4px 6px 20px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.rightBracket{
+    position: fixed;
+    top: 330px;
+    right: 200px;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 4px 6px 20px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+}
+
+.heading{
+    background-color: black;
+    height: 80px;
+}
+
+.pagecontent{
+    display: flex;
+
+
+}
+
+.leftcontent{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 150px;
+}
+
+.pagenumber{
+    border-top: 1px dotted black;
+}
